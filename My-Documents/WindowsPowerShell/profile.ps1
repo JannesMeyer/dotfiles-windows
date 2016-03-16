@@ -54,3 +54,8 @@ Set-Alias subl Open-SublimeText
 
 # open
 Set-Alias open Invoke-Item
+
+# which
+Set-Alias which Get-Command
+
+# ls | Format-List *
