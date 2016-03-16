@@ -1,0 +1,41 @@
+[user]
+	name = Jannes Meyer
+	email = j.meyer@odey.com
+[core]
+	autocrlf = true
+	quotepath = false
+[http]
+	sslVerify = false
+[alias]
+	d = diff
+	st = status
+	co = checkout
+	cm = commit -m
+	ls = log --stat
+	gr = log --decorate --graph
+	
+	rs = reset
+	rs1 = reset HEAD~1
+	rs2 = reset HEAD~2
+	rh = reset --hard
+	rh1 = reset HEAD~1 --hard
+	rh2 = reset HEAD~2 --hard
+[diff]
+	renames = true
+[format]
+	pretty = %C(bold yellow)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(auto)— %an%d
+[color "branch"]
+	current = bold green
+	remote = white
+[color "status"] 
+	updated = bold green
+	changed = bold red
+	untracked = bold red
+	unmerged = bold red
+[color "diff"] 
+	new = bold green
+	old = bold red
+[push]
+	default = simple
+[difftool "sourcetree"]
+	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' \"$LOCAL\" \"$REMOTE\"
